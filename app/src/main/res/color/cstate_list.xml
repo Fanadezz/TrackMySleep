@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- separate file named cstate_list, path - Resources/color/cstate_list-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--when the button is activated-->
+    <item android:color="#fff" android:state_enabled="true" />
+    <!--when the button is deactivated-->
+    <item android:color="@android:color/darker_gray" android:state_enabled="false" />
+</selector>
+
+
+
+
+

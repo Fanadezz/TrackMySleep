@@ -1,0 +1,54 @@
+
+
+buildscript {
+
+    ext {
+        kotlin_version = '1.3.71'
+        archLifecycleVersion = '1.1.1'
+        room_version = '2.2.5'
+        coroutine_version = '1.3.3'
+        gradleVersion = '3.6.1'
+       // navigationVersion = '1.0.0'
+        nav_version = "2.2.1"
+      dataBindingCompilerVersion = gradleVersion // Always need to be the same.
+    }
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        //classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+       // compileOnly libraries.jdk14Deps
+
+
+
+
+
+
+
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+/*gradleEnterprise {
+    buildScan {
+        termsOfServiceUrl = "https://gradle.com/terms-of-service"
+        termsOfServiceAgree = "yes"
+    }
+}*/
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
